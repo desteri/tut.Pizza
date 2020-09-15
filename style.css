@@ -103,7 +103,7 @@ body {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-image: url(image/bg.png);
+    background-image: url(/image/bg.png);
     background-position: center center;
     text-decoration: none;
     padding: 30px 60px;
