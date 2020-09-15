@@ -103,7 +103,7 @@ body {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-image: url("../image/bg.png");
+    background-image: url(../image/bg.png);
     background-position: center center;
     text-decoration: none;
     padding: 30px 60px;
@@ -134,7 +134,7 @@ body {
 .page__title::before, .page__title::after {
     content: '';
     position: absolute;
-    background-image: url("../image/pattern.png");
+    background-image: url(../image/pattern.png);
     display: block;
     width: 102px;
     height: 28px;
@@ -239,7 +239,7 @@ body {
 }
 
 .number-one::after {
-    background-image: url("../image/icon_01.png");
+    background-image: url(../image/icon_01.png);
     width: 126px;
     height: 71px;
     left: 66px;
@@ -247,7 +247,7 @@ body {
 }
 
 .number-two::after {
-    background-image: url("../image/icon_02.png");
+    background-image: url(../image/icon_02.png);
     width: 184px;
     height: 81px;
     left: 79px;
@@ -255,7 +255,7 @@ body {
 }
 
 .number-three::after {
-    background-image: url("../image/icon_03.png");
+    background-image: url(../image/icon_03.png);
     width: 142px;
     height: 68px;
     left: 105px;
@@ -288,7 +288,7 @@ body {
 
 /* footer */
 .footer {
-    background-image: url("../image/footer.png");
+    background-image: url(../image/footer.png);
     padding: 35px 0;
     color: #fff;
     text-transform: uppercase;
