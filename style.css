@@ -1,0 +1,381 @@
+body {
+    background-color: #eaeaea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* nav */
+.nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px;
+    padding-bottom: 40px;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav>a {
+    padding-left: 24px;
+    margin-left: 15px;
+    position: relative;
+    text-decoration: none;
+    color: #494949;
+    border-left: 2px solid #494949;
+    transition: color .1s linear;
+}
+
+.nav>a:hover {
+    color: #b9b9b9;
+}
+
+.nav>a:first-child {
+    border-left: none;
+}
+
+
+/* banner */
+.banner {
+    background: #ee252d url("../image/banner.png") center no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 210px;
+    padding-bottom: 285px;
+}
+
+.banner__pizza {
+    position: absolute;
+    right: -14px;
+    top: -200px;
+}
+
+.banner__title {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner__description {
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 1.25;
+    max-width: 570px;
+}
+
+
+/* btn */
+.btn {
+    display: inline-block;
+    padding: 11px 29px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+}
+
+.btn-start {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-image: url(../image/bg.png);
+    background-position: center center;
+    text-decoration: none;
+    padding: 30px 60px;
+    background-repeat: no-repeat;
+
+}
+
+
+/* page */
+.page {
+    padding-bottom: 95px;
+}
+
+.page__title {
+    display: inline-block;
+    margin-top: 113px;
+    margin-bottom: 11px;
+    margin-right: 24px;
+    padding: 0 127px;
+    font-size: 45px;
+    color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+.page__title::before, .page__title::after {
+    content: '';
+    position: absolute;
+    background-image: url(../image/pattern.png);
+    display: block;
+    width: 102px;
+    height: 28px;
+    top: calc(50% - 14px);
+}
+
+.page__title::before {
+    left: 0;
+}
+
+.page__title::after {
+    right: 0;
+}
+
+.page__subtitle {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #959595;
+}
+
+.page__menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 42px;
+    margin-bottom: 65px;
+}
+
+.page__menu>li {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 2px solid #494848;
+}
+
+.page__menu>li>a {
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: #494848;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    transition: color .1s linear;
+}
+
+.page__menu>li:first-child {
+    border-left: none;
+}
+
+.page__menu>li>a:hover {
+    color: #b9b9b9;
+}
+
+.page__active {
+    border-bottom: 4px solid #ee252d;
+    position: relative;
+}
+
+.page__active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+
+.page__box {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.page__item {
+    padding: 64px 0 50px 55px;
+    box-sizing: content-box;
+}
+
+.page__number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #282828;
+    left: -7px;
+    top: -12px;
+}
+
+.page__number::after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+.number-one::after {
+    background-image: url(../image/icon_01.png);
+    width: 126px;
+    height: 71px;
+    left: 66px;
+    top: calc(50% - 35px);
+}
+
+.number-two::after {
+    background-image: url(../image/icon_02.png);
+    width: 184px;
+    height: 81px;
+    left: 79px;
+    top: calc(50% - 40px);
+}
+
+.number-three::after {
+    background-image: url(../image/icon_03.png);
+    width: 142px;
+    height: 68px;
+    left: 105px;
+    top: calc(50% - 34px);
+}
+
+.page__item:last-child .page__text {
+    border-right: none;
+}
+
+.page__text {
+    border-right: 1px solid #eaeaea;
+    padding-right: 55px;
+}
+
+.page__text h3{
+    font-size: 45px;
+    color: #282828;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.page__text p {
+    font-size: 17px;
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+/* footer */
+.footer {
+    background-image: url(../image/footer.png);
+    padding: 35px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* media */
+@media (max-width: 1200px) {
+
+    .container {
+        max-width: 800px;
+    }
+
+    .banner__pizza {
+        display: none;
+    }
+
+    .banner {
+        padding: 75px 0 100px 0;
+    }
+
+    .page__box {
+        flex-direction: column;
+    }
+
+    .page__title, .page__text h3 {
+        font-size: 35px;
+    }
+
+    .page__subtitle {
+        font-size: 18px;
+    }
+
+    .page__menu>li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page__item {
+        padding: 30px 55px 24px 55px;
+    }
+
+    .page__item:last-child .page__text {
+        border-bottom: none;
+    }
+
+    .page__text {
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .nav__inner {
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 34px;
+    }
+
+    .page__title::before, .page__title::after {
+        display: none;
+    }
+
+    .btn-start {
+        font-size: 20px;
+        background-size: contain;
+    }
+
+    .footer {
+        padding: 13px 0;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
